@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Study Buddy Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="emoji">👨‍💻</span>
+        <h1>DSA Mentor AI</h1>
+      </div>
+      <p class="tagline">Your personal DSA problem-Mentor</p>
+    </header>
+
+    <main>
+      <div class="api-key-section">
+        <label for="apiKey">Gemini API Key</label>
+        <div class="input-wrapper">
+          <input 
+            type="password" 
+            id="apiKey" 
+            placeholder="Enter your Gemini API key here"
+            autocomplete="off"
+          >
+          <button id="toggleVisibility" title="Toggle visibility">
+            <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <svg id="eyeOffIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+              <line x1="1" y1="1" x2="23" y2="23"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="api-key-help">
+          <a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer">Get a Gemini API key</a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="saveBtn" class="primary">Save Settings</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div id="statusMessage" class="status-message hidden">
+        <span id="statusText"></span>
+      </div>
+    </main>
+
+    <div class="settings-section">
+      <h2>Settings</h2>
+      <div class="setting-item">
+        <label for="autoActivate">
+          <input type="checkbox" id="autoActivate" checked>
+          <span>Automatically activate on coding sites</span>
+        </label>
+      </div>
+      <div class="setting-item">
+        <label for="darkTheme">
+          <input type="checkbox" id="darkTheme" checked>
+          <span>Use dark theme</span>
+        </label>
+      </div>
+    </div>
+
+    <footer>
+      <div class="sites-info">
+        <h3>Supported Sites</h3>
+        <ul>
+          <li>MAANG.in</li>
+          <li>LeetCode</li>
+          <li>Codeforces</li>
+          <li>HackerRank</li>
+          <li>GeeksforGeeks</li>
+          <li>InterviewBit</li>
+          <li>CodingNinjas</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
