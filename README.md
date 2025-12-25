@@ -1,4 +1,4 @@
-# 🚀 Chatbot Mentor for AZ | Chrome Extension  
+# 🚀 Chatbot Mentor | Chrome Extension  
 
 This **Chrome extension** integrates a chatbot into [AZ (maang.in)](https://maang.in), appearing at the bottom left of every problem. The chatbot acts as a mentor, guiding users with structured problem-solving approaches instead of directly providing solutions.  
 
